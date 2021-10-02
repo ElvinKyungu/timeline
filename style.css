@@ -1,0 +1,139 @@
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #333;
+}
+
+h1 {
+    text-align-last: center;
+    padding: 240px 0;
+    color: #f1f1f1
+}
+
+.box-timeline {
+    width: 100%;
+    height: 1500px;
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 80px 0 250px 0;
+    margin-bottom: 100px;
+}
+
+.ligne {
+    height: 1000px;
+    width: 8px;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+.rond {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    border: 1px solid #000;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+/* 1000 - 160  +80 / 3 =~ 306*/
+
+.r1 {
+    top: 80px;
+    color: rgb(255, 0, 0);
+}
+
+.r2 {
+    top: 386px;
+    color: rgb(38, 255, 139);
+}
+
+.r3 {
+    top: 692px;
+    color: white;
+}
+
+.r4 {
+    top: 1000px;
+    color: orange;
+}
+
+.box {
+    color: #333;
+    width: 400px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 3px;
+    height: auto;
+    background-color: #f1f1f1;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.b1 {
+    top: 80px;
+    left: calc(50% - 270px);
+}
+
+.b2 {
+    top: 386px;
+    left: calc(50% + 270px);
+}
+
+.b3 {
+    top: 692px;
+    left: calc(50% - 270px);
+}
+
+.b4 {
+    top: 1000px;
+    left: calc(50% + 270px);
+}
+
+.box p {
+    line-height: 20px;
+    max-width: 10px 0 20px 0;
+}
+
+.btn {
+    display: block;
+    background-color: midnightblue;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .ligne {
+        position: relative;
+        left: 200px;
+    }
+    .rond {
+        left: calc(50% + 200px);
+    }
+    .box {
+        left: calc(50% - 50px);
+    }
+}
